@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".vistas.CredencialActivity">
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.AppBarLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.AppBarLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_60"
+            android:layout_marginLeft="@dimen/_10"
+            android:layout_marginRight="@dimen/_10">
+
+            <ImageView
+                android:id="@+id/credencial_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="129dp"
+                android:src="@drawable/logo_alumni" />
+            <FrameLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:layout_span="5"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10"
+                android:layout_marginBottom="@dimen/_10">
+            </FrameLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/credencial_nombre"
+               android:text="NATALIA ANGÉLICA GONZÁLEZ BAHAMONDES"
+               android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/credencial_rut"
+                android:text="13.564.217-7"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/credencial_carrera"
+                android:text="INGENIERÍA GEO Y CAR"
+                android:textColor="@color/colorPrimary"/>
+            <FrameLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:layout_span="5"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10"
+                android:layout_marginBottom="@dimen/_10">
+            </FrameLayout>
+            <ImageView
+                android:id="@+id/credencial_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <!--NavigationView donde se muestra drawer-->
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/drawer_cabecero"
+        app:menu="@menu/drawer_menu"
+        android:layout_marginTop="75dp"/>
+    <!--NavigationView donde se muestra drawer-->
+</android.support.v4.widget.DrawerLayout>

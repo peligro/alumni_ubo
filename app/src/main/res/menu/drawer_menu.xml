@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/beneficios"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="Beneficios" />
+        <item
+            android:id="@+id/noticias"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Noticias" />
+        <item
+            android:id="@+id/credencial"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="Mi Credencial" />
+        <item
+            android:id="@+id/mi_cuenta"
+            android:title="Mi Cuenta"
+            android:icon="@android:drawable/ic_menu_edit"/>
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:title="Cerrar Sesión"
+            android:icon="@android:drawable/ic_menu_delete"/>
+    </group>
+
+
+</menu>

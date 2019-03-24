@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/_10"
+        android:layout_marginRight="@dimen/_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/logo_alumni" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_30">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="@dimen/_50"
+                android:id="@+id/rut"
+                android:hint="RUT"
+                android:inputType="text"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="@dimen/_50"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:hint="Contraseña"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/entrar"
+                android:onClick="ejecutar"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/blanco"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_puedes_entrar"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_50"
+                android:onClick="no_puedes_entrar"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

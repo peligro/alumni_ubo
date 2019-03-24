@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Alumni UBO</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="password">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="no_puedes_entrar">¿No puedes entrar? Haz clic aquí</string>
+    <string name="cargando">Cargando....</string>
+    <string name="validacion_1">El campo RUT está vacío</string>
+    <string name="validacion_2">\nEl RUT ingresado no es válido</string>
+    <string name="validacion_3">\nEl campo Contraseña está vacío</string>
+    <string name="titulo_beneficios">Beneficios</string>
+    <string name="titulo_credencial">Credencial</string>
+    <string name="titulo_micuenta">Mi Cuenta</string>
+    <string name="titulo_noticias">Noticias</string>
+</resources>
